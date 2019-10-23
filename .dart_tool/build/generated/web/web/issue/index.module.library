@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["web|web/issue/question_util.dart","web|web/global.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["html"],"hasMain":true}

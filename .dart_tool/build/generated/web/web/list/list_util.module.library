@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["web|web/config.dart","web|web/data.dart","web|web/global.dart","web|web/http_util.dart","web|web/model/issue_list_data.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["html","convert"],"hasMain":false}

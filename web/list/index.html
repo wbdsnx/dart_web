@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/dart-lang/stagehand">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>题库</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <script defer src="index.dart.js"></script>
+</head>
+<body>
+<div id="output">
+    <div class="label">题库</div>
+    <div id="tools">
+        <button id="batch_operator_button" style="width: 80px">批量操作</button>
+        <button id="batch_delete_button">删除</button>
+        <a href="http://120.25.254.159/hcy-template.xlsx">下载模版</a>
+        <input type="file" id="file_select" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+        <button id="file_submit">上传</button>
+    </div>
+    <div id="search_div">
+        <div id="selectors">
+        </div>
+        <div id="search_box"><input id="search_input" type="text" placeholder="题目ID" maxlength="">
+            <button id='search_button'>查询</button>
+            <button id='add_issue_button'>增加</button>
+        </div>
+    </div>
+    <table id="issue_list" border="1" cellspacing="0">
+        <thead>
+        <tr>
+            <td class="selectShown">
+                <input type="checkbox" id="selectAll"> 全选
+            </td>
+            <td>ID</td>
+            <td>题目</td>
+            <td>选项</td>
+            <td>正确选项</td>
+            <td>难度</td>
+            <td>科目类型</td>
+            <td>题目类型</td>
+            <td>选项个数</td>
+            <td>出题日期</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody id="content">
+        </tbody>
+    </table>
+    <div id="page">
+        <div id="page_describe"></div>
+        <div>
+            每页<select id="page_size">
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>条信息
+            跳转至第<select id="jump_page_select"></select>页
+        </div>
+    </div>
+    <div class="loading_div">
+        <img id="upload_img" src="../images/loading.gif" width="140px" height="160px">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+name: web
+version: 0.0.1
+description: A sample web application
+dependencies:
+  json_annotation: ^2.0.0
+dev_dependencies:
+  dio: ^3.0.1
+  json_serializable: ^2.3.0
+  build_runner: ^1.6.0
+  build_web_compilers: ^2.3.0
+  pedantic: ^1.8.0
